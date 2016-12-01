@@ -4,3 +4,7 @@
 [submodule "oh"]
 	path = oh
 	url = https://github.com/peteasa/oh.git
+[submodule "AdiHDLLib"]
+	path = AdiHDLLib
+	url = git@github.com:/analogdevicesinc/hdl
+	branch = hdl_2016_r1
