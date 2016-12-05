@@ -1,11 +1,11 @@
 
 M_VIVADO := vivado -mode batch -source
 
-.PHONY: all clean
+ADI_IPS := axi_clkgen axi_hdmi_tx axi_spdif_tx
 
-all:
-	make -C AdiHDLLib/ lib
-#	make -C AdiHDLLib/projects/ all
+.PHONY: all $(ADI_IPS) clean
+
+all: $(ADI_IPS)
 	make -C oh/src/parallella/fpga/parallella_base all
 #	make -C oh/src/parallella/fpga/headless all
 	# remove old elink simulation for now $(M_VIVADO) elinkdv.tcl
@@ -14,5 +14,9 @@ all:
 	$(M_VIVADO) 7010_hdmi.tcl
 	cd 7010_hdmi ; rm -f bit2bin.bin elink2_top_wrapper.bit.bin ; bootgen -image bit2bin.bif -split bin ; cd ..
 
+$(ADI_IPS):
+	make -C AdiHDLLib/library/$@
+
 clean:
-	make -C oh/parallella/fpga/ clean
+	make -C AdiHDLLib clean
+	make -C oh/src/parallella/fpga/ clean
