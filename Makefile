@@ -5,6 +5,10 @@ ADI_IPS := axi_clkgen axi_hdmi_tx axi_spdif_tx
 
 .PHONY: all $(ADI_IPS) clean
 
+# HACK: ADI HDL 2016_R1 wants Vivado 2015.4.2, but parallella_base requires
+# Vivado 2015.4 (a.k.a. the Vivado 2015.4.2 installer doesn't work for me).
+export ADI_IGNORE_VERSION_CHECK=yes
+
 all: $(ADI_IPS)
 	make -C oh/src/parallella/fpga/parallella_base all
 #	make -C oh/src/parallella/fpga/headless all

@@ -1,8 +1,8 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-//Date        : Wed Aug 17 16:30:57 2016
-//Host        : HomeMegaUbuntu running 64-bit Ubuntu 16.04.1 LTS
+//Tool Version: Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+//Date        : Thu Dec  1 14:06:49 2016
+//Host        : ola-laptop running 64-bit Fedora release 20 (Heisenbug)
 //Command     : generate_target elink2_top_wrapper.bd
 //Design      : elink2_top_wrapper
 //Purpose     : IP block netlist
@@ -177,7 +177,7 @@ module elink2_top_wrapper
   wire TXi_rd_wait_n;
   wire TXi_rd_wait_p;
 
-elink2_top elink2_top_i
+  elink2_top elink2_top_i
        (.CCLK_N(CCLK_N),
         .CCLK_P(CCLK_P),
         .DDR_addr(DDR_addr),

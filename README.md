@@ -4,6 +4,10 @@ The aim is to create an environment for fpga development for [Parallella](http:/
 
 START IN [peteasa/parallella](https://github.com/peteasa/parallella/wiki/Home) for a full description of the project
 
+### Requirements
+
+* Xilinx Vivado 2015.4.
+
 ### Brief note about this repository
 
 Note each of these sources is likely to be covered by a different license.  Please refer to the original source for copyright information
