@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-//Date        : Wed Dec  7 13:48:33 2016
+//Date        : Wed Dec  7 21:06:16 2016
 //Host        : ola-laptop running 64-bit Fedora release 20 (Heisenbug)
 //Command     : generate_target elink2_top_wrapper.bd
 //Design      : elink2_top_wrapper
