@@ -6,5 +6,5 @@
 	url = https://github.com/peteasa/oh.git
 [submodule "AdiHDLLib"]
 	path = AdiHDLLib
-	url = git@github.com:/analogdevicesinc/hdl
+	url = https://github.com/analogdevicesinc/hdl.git
 	branch = hdl_2016_r1
