@@ -3,7 +3,7 @@
 	url = https://github.com/Xilinx/device-tree-xlnx.git
 [submodule "oh"]
 	path = oh
-	url = https://github.com/peteasa/oh.git
+	url = https://github.com/olajep/oh.git
 [submodule "AdiHDLLib"]
 	path = AdiHDLLib
 	url = https://github.com/analogdevicesinc/hdl.git
